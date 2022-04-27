@@ -38,39 +38,94 @@
 
 </head>
 <body>
-
-    <!-- <div class="modal-bg" id="login-modal">
-        <div class="modal-front">
-            <div class="modal-title">Login to SpotifyShare</div>
-            <div class="form-details">
-                <div class="input-box">
-                </div>
-            </div>
-            <input type="submit" value="Login" class="login-btn">
-        </div>
-    </div> -->
     
+    <!-- Modal Section -->
     <div class="modal-bg" id="login-modal">
         <div class="modal-front">
-            
             <div class="modal-title">Login to SpotifyShare</div>
-            
             <div class="form-details">
                 <div class="input-box">
                     <input type="password" name="password" id="password" required>
                 </div>
             </div>
-
             <button class="login-btn" onclick="loginBtnClicked()">Login</button>
-
         </div>
     </div>
 
-    <div class="main">
-        <button>
-            ge
-        </button>
-        <h2>eigba</h2>
+    <!----Hero Section---->
+    <div class="hero_section">
+        <div class="container">
+
+            <div class="buttons-container">
+                <button onclick="getAccessTokensAll()">1. Get Access Token</button>
+                <button onclick="userDataLoadAll()">2. Load User Data</button>
+                <button onclick="callbackValuesAll()">3. Callback Values</button>
+                <button onclick="startLoopAll()">4. Start Loop</button>
+                <button onclick="stopLoopAll()">5. Stop Loop</button>
+            </div>
+
+            <div class="card-container">
+
+                <div class="card-card">
+                    <div class="upper-container">
+                        <div class="image-container">
+                            <img id="profilepic-devik" src="" alt="">
+                            <img id="songimage-devik" src="" alt="">
+                        </div>
+                    </div>
+                    <div class="lower-container">
+                        <div class="song-info">
+                            <h6 id="songname-devik" class="song-name"></h6>
+                            <h6 id="artistsname-devik" class="artists-name"></h6>
+                            <a id="songlink-devik" class="song-link" target="_blank" href=""><i class="fa fa-spotify"></i> Open in Spotify</a>
+                        </div>
+                        <div class="progress">
+                            <div id="progressbar-devik" class="progress-bar" role="progressbar"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-card">
+                    <div class="upper-container">
+                        <div class="image-container">
+                            <img id="profilepic-jiya" src="" alt="">
+                            <img id="songimage-jiya" src="" alt="">
+                        </div>
+                    </div>
+                    <div class="lower-container">
+                        <div class="song-info">
+                            <h6 id="songname-jiya" class="song-name"></h6>
+                            <h6 id="artistsname-jiya" class="artists-name"></h6>
+                            <a id="songlink-jiya" class="song-link" target="_blank" href=""><i class="fa fa-spotify"></i> Open in Spotify</a>
+                        </div>
+                        <div class="progress">
+                            <div id="progressbar-jiya" class="progress-bar" role="progressbar"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-card">
+                    <div class="upper-container">
+                        <div class="image-container">
+                            <img id="profilepic-pukhraj" src="" alt="">
+                            <img id="songimage-pukhraj" src="" alt="">
+                        </div>
+                    </div>
+                    <div class="lower-container">
+                        <div class="song-info">
+                            <h6 id="songname-pukhraj" class="song-name"></h6>
+                            <h6 id="artistsname-pukhraj" class="artists-name"></h6>
+                            <a id="songlink-pukhraj" class="song-link" target="_blank" href=""><i class="fa fa-spotify"></i> Open in Spotify</a>
+                        </div>
+                        <div class="progress">
+                            <div id="progressbar-pukhraj" class="progress-bar" role="progressbar"></div>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+
+        </div>
     </div>
 
     <!-- Local Files -->
