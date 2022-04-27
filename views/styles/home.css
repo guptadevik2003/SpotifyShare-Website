@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+:root{
+    --arc-io-purple: #7b4dff;
+
+    --background-grey: #080c11;
+    --spotify-green: #22c55e;
+    --hover-grey: #2a2f3a;
+    --grey-text: #505a69;
+    --artist-black: #090a0c;
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: var(--background-grey) !important;
+}
+
+/* Modal Code */
+.modal-bg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.69);
+}
+
+.modal-bg .modal-front{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+    background: var(--background-grey);
+    padding: 25px 30px;
+    border-radius: 5px;
+    margin: 9px;
+    /* box-shadow: 6px 6px 20px rgba(122,122,122,0.5); */
+}
+
+.modal-bg .modal-title{
+    color: white;
+    font-size: 24px;
+    font-weight: 500;
+    position: relative;
+}
+.modal-bg .modal-title::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 23px;
+    background: var(--spotify-green);
+}
+
+.modal-bg #modal-form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.modal-bg #modal-form .form-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0px 12px 0px;
+}
+
+.modal-bg #modal-form .form-details .input-box{
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.modal-bg #modal-form .form-details .input-box input{
+    height: 45px;
+    width: 100%;
+    min-width: 300px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--grey-text);
+    padding-left: 11px;
+    font-size: 15px;
+    border-bottom-width: 2px;
+    background: var(--background-grey);
+    color: white;
+}
+.modal-bg #modal-form .form-details .input-box input:valid,
+.modal-bg #modal-form .form-details .input-box input:focus{
+    border: 1px solid var(--spotify-green);
+    border-bottom-width: 2px;
+}
+
+.modal-bg .login-btn{
+    width: 50%;
+    outline: none;
+    color: var(--background-grey);
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    background: var(--spotify-green);
+    padding: 10px;
+}
