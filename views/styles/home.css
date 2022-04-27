@@ -61,26 +61,19 @@ body{
     background: var(--spotify-green);
 }
 
-.modal-bg #modal-form{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.modal-bg #modal-form .form-details{
+.modal-bg .form-details{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 20px 0px 12px 0px;
 }
 
-.modal-bg #modal-form .form-details .input-box{
+.modal-bg .form-details .input-box{
     margin-bottom: 15px;
     width: 100%;
 }
 
-.modal-bg #modal-form .form-details .input-box input{
+.modal-bg .form-details .input-box input{
     height: 45px;
     width: 100%;
     min-width: 300px;
@@ -93,8 +86,8 @@ body{
     background: var(--background-grey);
     color: white;
 }
-.modal-bg #modal-form .form-details .input-box input:valid,
-.modal-bg #modal-form .form-details .input-box input:focus{
+.modal-bg .form-details .input-box input:valid,
+.modal-bg .form-details .input-box input:focus{
     border: 1px solid var(--spotify-green);
     border-bottom-width: 2px;
 }

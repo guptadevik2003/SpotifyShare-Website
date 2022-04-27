@@ -39,17 +39,30 @@
 </head>
 <body>
 
-    <div class="modal-bg" id="login-modal">
+    <!-- <div class="modal-bg" id="login-modal">
         <div class="modal-front">
             <div class="modal-title">Login to SpotifyShare</div>
-            <form id="modal-form" onsubmit="formSubmitted(); return false;">
-                <div class="form-details">
-                    <div class="input-box">
-                        <input type="password" name="password" id="password" required>
-                    </div>
+            <div class="form-details">
+                <div class="input-box">
                 </div>
-                <input type="submit" value="Login" class="login-btn">
-            </form>
+            </div>
+            <input type="submit" value="Login" class="login-btn">
+        </div>
+    </div> -->
+    
+    <div class="modal-bg" id="login-modal">
+        <div class="modal-front">
+            
+            <div class="modal-title">Login to SpotifyShare</div>
+            
+            <div class="form-details">
+                <div class="input-box">
+                    <input type="password" name="password" id="password" required>
+                </div>
+            </div>
+
+            <button class="login-btn" onclick="loginBtnClicked()">Login</button>
+
         </div>
     </div>
 
