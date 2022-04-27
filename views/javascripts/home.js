@@ -196,7 +196,7 @@ function callbackValueDevik() {
         devik_ele_songname.style.color = '#505a69'
         devik_ele_artistsname.innerHTML = ''
         devik_ele_songlink.style.display = 'none'
-        devik_ele_songimage.src = './media/no-song-playing.png'
+        devik_ele_songimage.src = 'https://spotifyshare.mapleclub.top/assets/no-song-playing.png'
         devik_ele_progressbar.style.width = '0%'
     })
     .then(data => {
@@ -258,7 +258,7 @@ function callbackValueJiya() {
         jiya_ele_songname.style.color = '#505a69'
         jiya_ele_artistsname.innerHTML = ''
         jiya_ele_songlink.style.display = 'none'
-        jiya_ele_songimage.src = './media/no-song-playing.png'
+        jiya_ele_songimage.src = 'https://spotifyshare.mapleclub.top/assets/no-song-playing.png'
         jiya_ele_progressbar.style.width = '0%'
     })
     .then(data => {
@@ -320,7 +320,7 @@ function callbackValuePukhraj() {
         pukhraj_ele_songname.style.color = '#505a69'
         pukhraj_ele_artistsname.innerHTML = ''
         pukhraj_ele_songlink.style.display = 'none'
-        pukhraj_ele_songimage.src = './media/no-song-playing.png'
+        pukhraj_ele_songimage.src = 'https://spotifyshare.mapleclub.top/assets/no-song-playing.png'
         pukhraj_ele_progressbar.style.width = '0%'
     })
     .then(data => {
