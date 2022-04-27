@@ -2,8 +2,8 @@ module.exports = ({ app, express }) => {
     express.useRoutes = async () => {
 
         // Import Routes
-        const apiRoute = require(`../routes/apiRoute`)
-        const rootRoute = require(`../routes/rootRoute`)
+        const rootRoute = require(`${process.cwd()}/routes/rootRoute`)
+        const apiRoute = require(`${process.cwd()}/routes/apiRoute`)
 
         // Using Routes
         app.use('/api', apiRoute)
